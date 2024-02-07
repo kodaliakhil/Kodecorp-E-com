@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      Kodecorp E-Commerce
+      Kodecorp E Commerce
     </div>
   )
 }
