@@ -1,7 +1,10 @@
 import { Suspense, lazy } from 'react';
-
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+function LoadingScreen() {
+  return <p>Loading...</p>
+}
 
 const Loadable = (Component) => (props) => {
   return (
@@ -11,14 +14,14 @@ const Loadable = (Component) => (props) => {
   );
 };
 
-// const GeneralApp = Loadable(lazy(() => import("../pages/dashboard/GeneralApp")),);
+const HeroSection = Loadable(lazy(() => import("./components/HeroSection")))
 
 function App() {
 
   return (
-    <div>
-      Kodecorp E Commerce
-    </div>
+    <>
+      <HeroSection />
+    </>
   )
 }
 
