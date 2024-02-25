@@ -1,6 +1,10 @@
-import { Suspense, lazy } from 'react';
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Suspense, lazy } from "react";
+import HomeNavbar from "./components/HomeNavbar/HomeNavbar";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/Home/Home";
+import HomeNavbar2 from "./components/HomeNavbar/HomeNavbar2";
+
 
 function LoadingScreen() {
   return <p>Loading...</p>
@@ -25,4 +29,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
