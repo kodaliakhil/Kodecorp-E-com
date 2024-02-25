@@ -24,6 +24,7 @@ function App() {
 
   return (
     <>
+    <HomeNavbar/>
       <HeroSection />
     </>
   )
